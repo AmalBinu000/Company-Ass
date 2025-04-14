@@ -1,0 +1,10 @@
+export const ADD_USER = "ADD_USER";
+export const UPDATE_USER = "UPDATE_USER";
+export const SET_USERS = "SET_USERS";
+
+export const addUser = (user) => ({ type: ADD_USER, payload: user });
+export const updateUser = (user, index) => ({
+  type: UPDATE_USER,
+  payload: { user, index },
+});
+export const setUsers = (users) => ({ type: SET_USERS, payload: users });
